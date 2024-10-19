@@ -7,7 +7,7 @@ from .models import Rule
 from .ast import Node  # Ensure the Node and related functions are defined in ast.py
 import re
 def home(request):
-    return render(request, 'rules/index.html', {'rules': rules})
+    return render(request, 'rules/index.html')
 def create_rule(rule_string):
     # Tokenize the rule string and parse it into an AST
     tokens = re.findall(r'\w+|[()<>!=]=|AND|OR', rule_string)
