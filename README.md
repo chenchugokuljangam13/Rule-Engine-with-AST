@@ -18,39 +18,39 @@ A simple rule engine built using Django that allows users to create rules, evalu
 - structure of the project
     ```graphql
     rule_engine/
-│
-├── rule_engine/              # Main Django project directory
-│   ├── __init__.py
-│   ├── settings.py           # Project settings
-│   ├── urls.py               # Project URLs
-│   ├── wsgi.py               # WSGI configuration for deployment
-│   └── asgi.py               # ASGI configuration for deployment (if needed)
-│
-├── rules/                    # Django app for rule engine logic
-│   ├── migrations/            # Database migrations
-│   │   └── __init__.py
-│   ├── __init__.py
-│   ├── admin.py              # Admin panel configuration
-│   ├── apps.py               # App configuration
-│   ├── models.py             # Database models
-│   ├── tests.py              # Unit tests
-│   ├── views.py              # API views
-│   ├── urls.py               # App-specific URLs
-│   ├── ast.py                # Abstract Syntax Tree (AST) logic
-│   ├── templates/            # HTML templates
-│   │   └── rules/
-│   │       └── index.html    # Main template for rule operations
-│   ├── static/               # Static files (CSS, JS)
-│   │   └── rules/
-│   │       ├── css/
-│   │       │   └── styles.css # CSS styles for the application
-│   │       └── js/
-│   │           └── script.js   # JavaScript for interactivity
-│   └── ...
-│
-├── requirements.txt          # Python package dependencies
-├── manage.py                 # Django command-line utility
-└── README.md                 # Project documentation
+    │
+    ├── rule_engine/              # Main Django project directory
+    │   ├── __init__.py
+    │   ├── settings.py           # Project settings
+    │   ├── urls.py               # Project URLs
+    │   ├── wsgi.py               # WSGI configuration for deployment
+    │   └── asgi.py               # ASGI configuration for deployment (if needed)
+    │
+    ├── rules/                    # Django app for rule engine logic
+    │   ├── migrations/            # Database migrations
+    │   │   └── __init__.py
+    │   ├── __init__.py
+    │   ├── admin.py              # Admin panel configuration
+    │   ├── apps.py               # App configuration
+    │   ├── models.py             # Database models
+    │   ├── tests.py              # Unit tests
+    │   ├── views.py              # API views
+    │   ├── urls.py               # App-specific URLs
+    │   ├── ast.py                # Abstract Syntax Tree (AST) logic
+    │   ├── templates/            # HTML templates
+    │   │   └── rules/
+    │   │       └── index.html    # Main template for rule operations
+    │   ├── static/               # Static files (CSS, JS)
+    │   │   └── rules/
+    │   │       ├── css/
+    │   │       │   └── styles.css # CSS styles for the application
+    │   │       └── js/
+    │   │           └── script.js   # JavaScript for interactivity
+    │   └── ...
+    │
+    ├── requirements.txt          # Python package dependencies
+    ├── manage.py                 # Django command-line utility
+    └── README.md                 # Project documentation
 
 
 ## Installation
