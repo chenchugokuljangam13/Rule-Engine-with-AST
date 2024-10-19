@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Rule Engine</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Rule Engine</h1>
+        <form id="rule-form">
+            <h2>Enter Rule:</h2>
+            <input type="text" id="rule_string" placeholder="format = age > 30 AND department = 'Sales'" required>
+            
+            <h2>Enter Data:</h2>
+            <textarea id="data" placeholder='format = {"age": 35, "department": "Sales"}' required></textarea>
+
+            <button type="submit">Evaluate Rule</button>
+        </form>
+
+        <h2>Result:</h2>
+        <div id="result"></div>
+    </div>
+
+    <script src="{% static 'rules/js/script.js' %}"></script>
+</body>
+</html>
